@@ -2,17 +2,17 @@
 
 <div align="center">
 
-<img src="Images/Project_Banner.png" width="900"/>
-
 ![Arduino](https://img.shields.io/badge/Arduino-Nano-00979D?style=for-the-badge&logo=arduino)
 ![nRF24L01](https://img.shields.io/badge/Wireless-nRF24L01-4CAF50?style=for-the-badge)
 ![Embedded C](https://img.shields.io/badge/Language-Embedded_C-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-### 🚀 Low-Cost Long-Range Wireless Actuator Control System
+# 🚀 Remote Control for Actuators
 
-*"Affordable, reliable and scalable wireless control for automation applications."*
+### Low-Cost Long-Range Wireless Communication System
+
+Affordable, reliable, and scalable wireless control for automation applications.
 
 </div>
 
@@ -20,37 +20,38 @@
 
 # 📖 Table of Contents
 
-- [🎯 Problem Statement](#-problem-statement)
-- [💡 Proposed Solution](#-proposed-solution)
-- [🔍 Project Overview](#-project-overview)
-- [✨ Features](#-features)
-- [⚙️ Hardware Components](#️-hardware-components)
-- [🔌 Pin Connections](#-pin-connections)
-- [📡 System Architecture](#-system-architecture)
-- [💻 Working Principle](#-working-principle)
-- [📁 Repository Structure](#-repository-structure)
-- [🚀 Getting Started](#-getting-started)
-- [📊 Results](#-results)
-- [🔮 Future Scope](#-future-scope)
-- [👨‍💻 Author](#-author)
+- 🎯 Problem Statement
+- 💡 Proposed Solution
+- 🔍 Project Overview
+- 📸 Hardware Setup
+- 🔌 Circuit Diagrams
+- ✨ Features
+- ⚙️ Hardware Components
+- 💻 Working Principle
+- 📁 Repository Structure
+- 🚀 Getting Started
+- 📊 Results
+- 🎯 Applications
+- 🔮 Future Scope
+- 👨‍💻 Author
 
 ---
 
 # 🎯 Problem Statement
 
-Modern automation systems often require actuators to be controlled remotely. Traditional wired systems suffer from several limitations:
+Modern automation systems require actuators to be controlled remotely. Traditional wired systems suffer from several limitations:
 
-❌ High installation cost.
+❌ High installation cost
 
-❌ Difficult wiring in large areas.
+❌ Difficult wiring in large areas
 
-❌ Limited flexibility.
+❌ Limited flexibility
 
-❌ Complex maintenance.
+❌ Complex maintenance
 
-❌ High-cost industrial wireless solutions.
+❌ Expensive industrial wireless solutions
 
-Many applications such as:
+Applications such as:
 
 - 🏭 Industrial Automation
 - 🌾 Smart Agriculture
@@ -70,7 +71,7 @@ This project presents a **Wireless Actuator Control System** using:
 - nRF24L01 Wireless Modules
 - Embedded C Programming
 
-The system creates a reliable wireless communication link between transmitter and receiver modules to control actuators remotely with:
+The system creates a reliable wireless communication link between transmitter and receiver modules, enabling remote control of actuators with:
 
 ✅ Low latency communication
 
@@ -86,37 +87,75 @@ The system creates a reliable wireless communication link between transmitter an
 
 # 🔍 Project Overview
 
-The system is divided into two main sections.
+The project consists of two sections.
 
 ## 📡 Transmitter Unit
 
-- Reads user input.
-- Generates command packets.
-- Sends commands wirelessly using nRF24L01.
+- Reads user input
+- Generates control packets
+- Sends commands wirelessly using nRF24L01
 
 ## ⚙️ Receiver Unit
 
-- Receives wireless packets.
-- Verifies received data.
-- Controls the connected actuator.
+- Receives wireless packets
+- Verifies received data
+- Controls the connected actuator
+
+---
+
+# 📸 Hardware Setup
+
+<p align="center">
+  <img src="./Images/Hardware/setup.jpg" width="700">
+</p>
+
+<p align="center">
+  <em>Complete Hardware Setup</em>
+</p>
+
+---
+
+# 🔌 Circuit Diagrams
+
+## 📡 Transmitter Circuit
+
+<p align="center">
+  <img src="./Images/transmitter.jpg" width="850">
+</p>
+
+<p align="center">
+  <em>Figure 1: Transmitter Circuit Diagram</em>
+</p>
+
+---
+
+## ⚙️ Receiver Circuit
+
+<p align="center">
+  <img src="./Images/receiver.jpg" width="850">
+</p>
+
+<p align="center">
+  <em>Figure 2: Receiver Circuit Diagram</em>
+</p>
 
 ---
 
 # ✨ Features
 
-✔️ Reliable long-range wireless communication.
+✔️ Reliable long-range wireless communication
 
-✔️ Low implementation cost.
+✔️ Low implementation cost
 
-✔️ Minimal communication delay.
+✔️ Minimal communication delay
 
-✔️ Modular and scalable design.
+✔️ Modular and scalable design
 
-✔️ Easy to replicate.
+✔️ Easy to replicate
 
-✔️ Suitable for industrial and agricultural applications.
+✔️ Suitable for industrial and agricultural applications
 
-✔️ Supports operation in interference-prone environments.
+✔️ Supports operation in interference-prone environments
 
 ---
 
@@ -135,12 +174,10 @@ The system is divided into two main sections.
 
 ---
 
-# 🔌 Pin Connections
-
-## nRF24L01 → Arduino Nano
+# 🔌 nRF24L01 Pin Connections
 
 | nRF24L01 | Arduino Nano |
-|----------|--------------|
+|-----------|---------------|
 | VCC | 3.3V |
 | GND | GND |
 | CE | D9 |
@@ -151,6 +188,24 @@ The system is divided into two main sections.
 
 ---
 
+# 💻 Working Principle
+
+### Step 1
+The user presses the button connected to the transmitter.
+
+### Step 2
+Arduino Nano generates a control packet.
+
+### Step 3
+The nRF24L01 module transmits the packet wirelessly.
+
+### Step 4
+The receiver module receives and validates the packet.
+
+### Step 5
+The actuator is switched ON or OFF accordingly.
+
+---
 
 # 📡 System Architecture
 
@@ -170,110 +225,6 @@ The system is divided into two main sections.
 
 ---
 
-# 💻 Working Principle
-
-### Step 1
-The user presses a button connected to the transmitter module.
-
-### Step 2
-Arduino Nano generates a control packet.
-
-### Step 3
-The nRF24L01 module transmits the packet wirelessly.
-
-### Step 4
-The receiver module receives and validates the packet.
-
-### Step 5
-The corresponding actuator is switched ON or OFF.
-
----
-
-# 📸 Hardware Setup
-
-<div align="center">
-<img src="Images/Hardware_Setup.jpg" width="700">
-</div>
-
----
-
-# 🔌 Circuit Diagram
-
-<div align="center">
-<img src="Images/transmitter.png" width="800">
-</div>
-
----
-
-# 📁 Repository Structure
-
-```text
-Remote-Control-for-Actuators/
-│
-├── README.md
-│
-├── Images/
-│   ├── Project_Banner.png
-│   ├── Hardware_Setup.jpg
-│   ├── Circuit_Diagram.png
-│   └── System_Architecture.png
-│
-├── Transmitter_Code/
-│   └── transmitter.ino
-│
-├── Receiver_Code/
-│   └── receiver.ino
-│
-├── Documentation/
-│   ├── Project_Report.pdf
-│   └── Presentation.pptx
-│
-├── LICENSE
-└── .gitignore
-```
-
----
-
-# 🚀 Getting Started
-
-## 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/Remote-Control-for-Actuators.git
-```
-
----
-
-## 2️⃣ Open Arduino IDE
-
-Install the following libraries:
-
-- RF24 Library
-- SPI Library
-
----
-
-## 3️⃣ Upload the Code
-
-Upload:
-
-- `transmitter.ino` → Transmitter Arduino Nano
-- `receiver.ino` → Receiver Arduino Nano
-
----
-
-## 4️⃣ Connect the Hardware
-
-Connect the modules according to the circuit diagram.
-
----
-
-## 5️⃣ Power the System
-
-Power both Arduino boards and start controlling the actuator wirelessly.
-
----
-
 # 📊 Results
 
 | Parameter | Value |
@@ -283,7 +234,6 @@ Power both Arduino boards and start controlling the actuator wirelessly.
 | Communication Module | nRF24L01 |
 | Response Time | Very Low |
 | Cost Reduction | >60% |
-| Operating Distance | Long Range |
 | Reliability | High |
 
 ---
@@ -312,13 +262,70 @@ Power both Arduino boards and start controlling the actuator wirelessly.
 
 🚀 Encrypted Communication
 
-🚀 Multi-Node Communication Network
+🚀 Multi-node Communication
 
-🚀 Battery Monitoring System
+🚀 Battery Monitoring
 
-🚀 LoRa Integration for Kilometer Range
+🚀 LoRa Integration
 
 🚀 Cloud-Based Automation Platform
+
+---
+
+# 📁 Repository Structure
+
+```text
+Remote-Control-for-Actuators-using-Arduino-nRF24L01/
+│
+├── README.md
+│
+├── Images/
+│   ├── transmitter.jpg
+│   ├── receiver.jpg
+│   └── Hardware/
+│       └── setup.jpg
+│
+├── Transmitter_Code/
+│   └── transmitter.ino
+│
+├── Receiver_Code/
+│   └── receiver.ino
+│
+├── Documentation/
+│   ├── Project_Report.pdf
+│   └── Presentation.pptx
+│
+├── LICENSE
+└── .gitignore
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/aksh0at/Remote-Control-for-Actuators-using-Arduino-nRF24L01.git
+```
+
+## Install Libraries
+
+- RF24
+- SPI
+
+## Upload Code
+
+- `transmitter.ino` → Transmitter Arduino Nano
+- `receiver.ino` → Receiver Arduino Nano
+
+## Connect Hardware
+
+Connect according to the circuit diagrams above.
+
+## Power the System
+
+Power both Arduino boards and start controlling the actuator wirelessly.
 
 ---
 
@@ -327,8 +334,8 @@ Power both Arduino boards and start controlling the actuator wirelessly.
 - Arduino Nano
 - Embedded C
 - SPI Communication
-- nRF24L01 Wireless Module
-- Wireless Communication Protocols
+- nRF24L01
+- Wireless Communication
 
 ---
 
@@ -341,26 +348,14 @@ Power both Arduino boards and start controlling the actuator wirelessly.
 
 💻 Embedded Systems | IoT | Robotics Enthusiast
 
-📧 Email: your-email@example.com
-
-🔗 LinkedIn: https://linkedin.com/in/your-profile
-
-🔗 GitHub: https://github.com/yourusername
-
----
-
-# ⭐ Support
-
-If you found this project useful, please consider giving it a ⭐ on GitHub.
-
-It motivates me to build more innovative Embedded and IoT projects.
+🔗 GitHub: https://github.com/aksh0at
 
 ---
 
 <div align="center">
 
-### 🚀 Building Affordable Wireless Automation Solutions
+## ⭐ If you found this project useful, please give it a star!
 
-⭐ Star this repository if you like this project!
+### 🚀 Building Affordable Wireless Automation Solutions
 
 </div>
