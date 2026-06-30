@@ -151,6 +151,22 @@ The system is divided into two main sections.
 
 ---
 
+# 🔌 Pin Diagram / Circuit Connections
+
+The following diagram illustrates the complete wiring and pin connections between the Arduino Nano, nRF24L01 modules, and the actuator circuitry.
+
+<p align="center">
+  <img src="Images/Transmitter.png" alt="Circuit Diagram" width="850">
+</p>
+
+<p align="center">
+  <img src="Images/Receiver.png" alt="Circuit Diagram" width="850">
+</p>
+
+<p align="center">
+  <em>Figure: Complete Pin Connection and Circuit Diagram</em>
+</p>
+
 # 📡 System Architecture
 
 ```text
