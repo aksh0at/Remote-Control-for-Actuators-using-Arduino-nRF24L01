@@ -106,7 +106,7 @@ The project consists of two sections.
 # 📸 Hardware Setup
 
 <p align="center">
-  <img src="./Images/Hardware/hardwareimage.png" width="700">
+  <img src="./Images/hardwareimage.png" width="700">
 </p>
 
 <p align="center">
